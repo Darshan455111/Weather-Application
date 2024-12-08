@@ -7,8 +7,8 @@ const WeatherApp = () => {
   const [forecastData, setForecastData] = useState([]);
   const [unit, setUnit] = useState("°C");
 
-  const WEATHER_API_ENDPOINT = `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.local.REACT_APP_WEATHER_API_KEY}&q=`;
-  const WEATHER_DATA_ENDPOINT = `https://api.openweathermap.org/data/3.0/onecall?appid=${process.env.local.REACT_APP_WEATHER_API_KEY}&exclude=minutely,hourly,alerts&units=metric&`;
+  const WEATHER_API_ENDPOINT = `https://api.openweathermap.org/data/2.5/weather?appid=${process.env.REACT_APP_WEATHER_API_KEY}&q=`;
+  const WEATHER_DATA_ENDPOINT = `https://api.openweathermap.org/data/3.0/onecall?appid=${process.env.REACT_APP_WEATHER_API_KEY}&exclude=minutely,hourly,alerts&units=metric&`;
   
 
   const findUserLocation = () => {
