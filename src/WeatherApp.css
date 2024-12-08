@@ -1,0 +1,210 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.weather-input {
+    width: 100%;
+    max-width: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #ffffff;
+    border-radius: 15px 0 0 15px;
+}
+
+.weather-input .input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.weather-input input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.weather-input .converter {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    transform: translateY(-50%);
+    background: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.weather-input .fa-search {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.weather-output {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 0 15px 15px 0;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+.weather-output .city {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.weather-output .temprature {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+.weather-output .feelsLike,
+.weather-output .description,
+.weather-output .date {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.highlight,
+.Forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.highlight div,
+.Forecast div {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.highlight div:hover,
+.Forecast div:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.Forecast img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.forecast-desc {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.temprature span {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.sun span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .weather-input {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .weather-output {
+        margin-top: 2rem;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .highlight,
+    .Forecast {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .weather-output .temprature {
+        font-size: 3rem;
+    }
+
+    .weather-output .city {
+        font-size: 1.5rem;
+    }
+
+    .highlight div,
+    .Forecast div {
+        padding: 1rem;
+    }
+
+    .weather-input .converter {
+        right: 20px;
+    }
+
+    .weather-input .fa-search {
+        right: 20px;
+    }
+}
+.weatherIcon{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+
+
