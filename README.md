@@ -1,70 +1,167 @@
-# Getting Started with Create React App
+# 🌤️ Weather Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A beautiful, modern weather application built with **React** that provides real-time weather data and forecasts using the OpenWeatherMap API. Features a stunning glassmorphism UI design with a vibrant purple-to-blue gradient background.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📸 Screenshots
 
-### `yarn start`
+### Main Dashboard
+![Main Dashboard — Search any city to view current weather, temperature, feels-like, and detailed highlights](screenshots/weather_app_main.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 7-Day Forecast
+![7-Day Forecast — View upcoming weather conditions with temperature ranges and descriptions](screenshots/weather_app_forecast.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Mobile Responsive View
+![Mobile Responsive — Fully optimized layout for smartphones and smaller screens](screenshots/weather_app_mobile.png)
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Features
 
-### `yarn build`
+- 🔍 **City Search** — Search weather data for any city worldwide
+- 🌡️ **Temperature Conversion** — Toggle between Celsius (°C) and Fahrenheit (°F)
+- 📊 **Today's Highlights** — Humidity, Wind Speed, Sunrise/Sunset, Cloud Coverage, UV Index, and Pressure
+- 📅 **7-Day Forecast** — View daily weather forecasts with icons and temperature ranges
+- 🎨 **Glassmorphism Design** — Modern frosted-glass UI with backdrop blur effects
+- 📱 **Responsive Layout** — Fully responsive design that adapts to all screen sizes
+- ⚡ **Real-Time Data** — Powered by OpenWeatherMap API for accurate, live weather information
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Technology | Purpose |
+|---|---|
+| **React 19** | Frontend framework |
+| **CSS3** | Styling with glassmorphism & animations |
+| **OpenWeatherMap API** | Weather data provider |
+| **Poppins Font** | Typography via Google Fonts |
+| **Font Awesome** | Icon library |
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Node.js** (v16 or higher)
+- **Yarn** or **npm** package manager
+- An **OpenWeatherMap API Key** — [Get one here](https://openweathermap.org/api)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/Weather-Application.git
+   cd Weather-Application
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Install dependencies**
+   ```bash
+   yarn install
+   # or
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Set up environment variables**
 
-### Code Splitting
+   Create a `.env` file in the root directory:
+   ```env
+   REACT_APP_WEATHER_API_KEY=your_openweathermap_api_key_here
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Start the development server**
+   ```bash
+   yarn start
+   # or
+   npm start
+   ```
 
-### Analyzing the Bundle Size
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📁 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+Weather-Application/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── manifest.json
+├── screenshots/
+│   ├── weather_app_main.png
+│   ├── weather_app_forecast.png
+│   └── weather_app_mobile.png
+├── src/
+│   ├── App.js              # Root component
+│   ├── App.css             # App-level styles
+│   ├── WeatherApp.js       # Main weather component
+│   ├── WeatherApp.css      # Weather component styles
+│   ├── index.js            # Entry point
+│   └── index.css           # Global styles & layout
+├── .env                    # API key (not committed)
+├── .gitignore
+├── package.json
+├── yarn.lock
+└── README.md
+```
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📜 Available Scripts
 
-### Deployment
+| Command | Description |
+|---|---|
+| `yarn start` | Runs the app in development mode on [localhost:3000](http://localhost:3000) |
+| `yarn build` | Builds the app for production to the `build` folder |
+| `yarn test` | Launches the test runner in interactive watch mode |
+| `yarn eject` | Ejects from Create React App (irreversible) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `yarn build` fails to minify
+## 🌐 API Reference
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This app uses two OpenWeatherMap endpoints:
+
+| Endpoint | Purpose |
+|---|---|
+| `/data/2.5/weather` | Get coordinates and basic weather for a city |
+| `/data/3.0/onecall` | Get detailed current weather + 7-day forecast |
+
+> **Note:** The One Call API 3.0 requires a subscription. Check [OpenWeatherMap pricing](https://openweathermap.org/price) for details.
+
+---
+
+## 🎨 Design Highlights
+
+- **Glassmorphism** — Semi-transparent panels with backdrop blur for a modern frosted-glass effect
+- **Gradient Background** — Smooth purple-to-blue gradient (`#6a11cb` → `#2575fc`)
+- **Hover Animations** — Cards scale up on hover with smooth transitions
+- **Custom Scrollbar** — Styled scrollbar matching the overall theme
+- **Responsive Breakpoints** — Optimized layouts for desktop (>768px), tablet, and mobile (<480px)
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+<p align="center">
+  Made with React & OpenWeatherMap API
+</p>
