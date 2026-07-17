@@ -7,13 +7,13 @@ A beautiful, modern weather application built with **React** that provides real-
 ## 📸 Screenshots
 
 ### Main Dashboard
-![Main Dashboard — Search any city to view current weather, temperature, feels-like, and detailed highlights](screenshots/weather_app_main.png)
+![Main Dashboard — Search any city to view current weather, temperature, feels-like, and detailed highlights](./public/Screenshots/weather_app_main.png)
 
 ### 7-Day Forecast
-![7-Day Forecast — View upcoming weather conditions with temperature ranges and descriptions](screenshots/weather_app_forecast.png)
+![7-Day Forecast — View upcoming weather conditions with temperature ranges and descriptions](./public/Screenshots/weather_app_forecast.png)
 
 ### Mobile Responsive View
-![Mobile Responsive — Fully optimized layout for smartphones and smaller screens](screenshots/weather_app_mobile.png)
+![Mobile Responsive — Fully optimized layout for smartphones and smaller screens](./public/Screenshots/weather_app_mobile.png)
 
 ---
 
@@ -87,13 +87,13 @@ A beautiful, modern weather application built with **React** that provides real-
 ```
 Weather-Application/
 ├── public/
+│   ├── Screenshots/
+│   │   ├── weather_app_main.png
+│   │   ├── weather_app_forecast.png
+│   │   └── weather_app_mobile.png
 │   ├── index.html
 │   ├── favicon.ico
 │   └── manifest.json
-├── screenshots/
-│   ├── weather_app_main.png
-│   ├── weather_app_forecast.png
-│   └── weather_app_mobile.png
 ├── src/
 │   ├── App.js              # Root component
 │   ├── App.css             # App-level styles
